@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    opacity: 0.9;
+    padding: 15px 20px;
+}
+
+
+header .logo {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Poppins;
+    letter-spacing: 5px;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+}
+
+.navlist li a, .logo{
+    color: white;
+}
+
+.navlist li a {
+    border-bottom: 2px solid transparent;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+.navlist li a:hover {
+    border-bottom: 2px solid black;
+}
+
+#main-icon {
+    /* display: none; */
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+
+#main-toggle {
+    display: none;
+}
+
+.main-icon-action {
+    display: none;
+}
+
+.curriculum {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(234.9deg, rgb(113, 72, 18) 0%, rgb(67, 52, 11) 25%, black 75% );
+    position: absolute;
+    top: 60;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.curriculum-text {
+    margin-left: 5%;
+}
+
+.curriculum-text h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.curriculum-text h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 30px;
+}
+
+.curriculum-text p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin: 0 0 30px;
+    line-height: 26px;
+    width: 80%;
+}
+
+.curriculum-text .button-cv {
+    border-radius: 20px;
+    background: white;
+    padding: 5px 50px 5px 10px;
+    border: none;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    
+}                                                     /* button */
+.curriculum-text .button-cv:hover{
+    background: transparent;
+    box-shadow: 0.4px 0.1px 6px 1px white;
+    transform: translateX(4px);
+    padding: 5px 10px 5px 10px;
+}
+
+.curriculum-text .button-cv .cv {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    transition: all 1s ease-in-out;
+}
+                                                        /* content button */
+.curriculum-text .button-cv:hover .cv {
+    color: white;
+}
+
+
+.curriculum-text .button-cv .cv i{
+    color: black;
+    font-size: 1rem;
+    vertical-align: auto;
+    margin-left: 10px;
+    transition: all 1s ease-in-out;
+}
+
+
+.curriculum-text .button-cv:hover .cv i {
+    color: white;
+    margin-left: 100px;
+}
+    
+
+    
+    .dev-img img {
+        height: auto;
+    width: 400px;
+    border-radius: 50%;
+    transition: all 1s linear;
+}
+
+.dev-img img:hover {
+    width: 450px;
+    opacity: 0.6;
+}
+
+.networks-wrapper {
+    position: absolute;
+    top: 40%;
+    padding: 0 20px;
+}
+
+.networks-wrapper i {
+    display: block;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.networks-wrapper i:hover {
+    transform: translateY(-3px);
+    background: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0.5px -0.9px 10px 0 white;
+}
+
+
+.scroll-down {
+    position: absolute;
+    bottom: 9%;
+    right: 5%;
+    transition: all .5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.169);
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.scroll-down:hover {
+    transform: translateY(10px);
+    box-shadow: 0.2px 3px 6px 0 white;
+    border-radius: 50%;
+
+}
+
+.scroll-down i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .dev-img img {
+        width: 300px;
+    }
+
+    .curriculum-text p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .curriculum-text {
+        margin-top: 20%;
+    } 
+
+    .networks-wrapper {
+        top: auto;
+        bottom: 0px;
+        left: 3%;
+    }
+
+    .networks-wrapper i {
+        display: inline;
+        padding: 20px;
+    }
+
+    .curriculum-text .button-cv {
+        margin-bottom: 5%;
+    }
+
+    .curriculum-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .curriculum-text h5 {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .navlist {
+        display: none;
+    }
+
+    .main-toggle {
+        display: block;
+    }
+
+    .main-icon-action {
+        display: block;
+    }
+
+    .curriculum {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .dev-img {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .networks-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 9%;
+        left: auto;
+        right: auto;
+        top: auto;
+        width: 100%;
+        padding: 0 7%;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+
+@media (max-width: 438px) {
+    .curriculum-text h5 {
+        font-size: 13px;
+    }
+
+    .networks-wrapper  {
+        bottom: 2%;
+    }
+
+    .dev-img  {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 342px) {
+    .dev-img img {
+        width: 200px;
+    }
+
+    .networks-wrapper {
+        bottom: 4%;
+    }
+
+    .curriculum-text p {
+        font-size: 12px;
+    }
+
+    .curriculum-text h4 {
+        font-size: 12px;
+    }
+
+    .curriculum-text h1 {
+        font-size: 1rem;
+    }
+}
+
