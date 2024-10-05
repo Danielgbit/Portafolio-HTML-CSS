@@ -255,13 +255,35 @@ header .logo {
     .curriculum-text h5 {
         font-size: 0.8rem;
     }
-
 }
 
 
+
+
 @media (max-width: 700px) {
+
     .navlist {
-        display: none;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(10, 10, 10);
+        opacity: 10;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    .navlist li {
+        margin: 20px 0;
+        background-color: rgba(76, 74, 74, 0.475);
+        padding: 10px 20px;
+        border-radius: 20px;
     }
 
     .main-toggle {
@@ -270,6 +292,7 @@ header .logo {
 
     .main-icon-action {
         display: block;
+        z-index: 100;
     }
 
     .curriculum {
