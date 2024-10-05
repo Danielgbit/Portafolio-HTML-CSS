@@ -23,4 +23,7 @@ sr.reveal('.dev-img', { delay: 400 })
 sr.reveal('.curriculum-text', { delay: 600 })
 sr.reveal('.networks-wrapper', { delay: 800, origin: 'left' })
 sr.reveal('.scroll-down', { delay: 800, origin: 'top' })
+sr.reveal('.scroll-down', { delay: 800, origin: 'top' })
+sr.reveal('.logo', { delay: 200, origin: 'left' })
+
 
