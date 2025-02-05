@@ -30,9 +30,8 @@ header .logo {
     color: white;
     font-weight: 600;
     font-size: 30px;
-    letter-spacing: 2px;
     font-family: Poppins;
-    letter-spacing: 5px;
+    font-weight: bold;
 }
 
 .navlist {
@@ -161,7 +160,7 @@ header .logo {
 
     
     .dev-img img {
-        height: auto;
+    height: auto;
     width: 400px;
     border-radius: 50%;
     transition: all 1s linear;
@@ -178,7 +177,7 @@ header .logo {
     padding: 0 20px;
 }
 
-.networks-wrapper i {
+.networks-wrapper a {
     display: block;
     margin: 30px 0;
     font-size: 1.5rem;
@@ -186,7 +185,7 @@ header .logo {
     cursor: pointer;
 }
 
-.networks-wrapper i:hover {
+.networks-wrapper a:hover {
     transform: translateY(-3px);
     background: transparent;
     border-radius: 50%;
@@ -239,7 +238,7 @@ header .logo {
         left: 3%;
     }
 
-    .networks-wrapper i {
+    .networks-wrapper a {
         display: inline;
         padding: 20px;
     }
