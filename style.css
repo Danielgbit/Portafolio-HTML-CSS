@@ -103,11 +103,13 @@ header .logo {
 }
 
 .curriculum-text p {
-    font-size: 15px;
-    letter-spacing: 0.5px;
+    font-size: 14px;
+    letter-spacing: -0.2px;
     margin: 0 0 30px;
     line-height: 26px;
     width: 80%;
+    font-weight: 200;
+    font-family: Poppins;
 }
 
 .curriculum-text .button-cv {
@@ -160,11 +162,11 @@ header .logo {
     filter: sepia(0.3) contrast(1.2) brightness(0.9); 
     width: 300px;
     border-radius: 50%;
-    transition: all 1s linear;
+    transition: all 200ms linear;
+    opacity: 0.9;
 }
 
 .dev-img img:hover {
-    width: 450px;
     opacity: 0.6;
 }
 
