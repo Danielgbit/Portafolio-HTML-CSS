@@ -10,6 +10,7 @@
 
 body {
     background-color: black;
+    height: 100vh;
 }
 
 header {
@@ -22,7 +23,6 @@ header {
     justify-content: space-between;
     background: transparent;
     opacity: 0.9;
-    padding: 15px 20px;
 }
 
 
@@ -75,19 +75,17 @@ header .logo {
 }
 
 .curriculum {
-    width: 100%;
-    height: 100%;
     background: linear-gradient(234.9deg, rgb(113, 72, 18) 0%, rgb(67, 52, 11) 25%, black 75% );
     top: 60;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 2rem;
-    padding: 0 5%;
+    height: 500px;
 }
 
 .curriculum-text {
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .curriculum-text h5 {
@@ -158,8 +156,9 @@ header .logo {
 
     
     .dev-img img {
-    height: auto;
-    width: 400px;
+    height: auto;   
+    filter: sepia(0.3) contrast(1.2) brightness(0.9); 
+    width: 300px;
     border-radius: 50%;
     transition: all 1s linear;
 }
@@ -332,7 +331,7 @@ header .logo {
 }
 
 .certification-date {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 100;
     color: white;
     margin-bottom: 15px;
@@ -360,24 +359,29 @@ header .logo {
         width: 300px;
     }
 
+
     .curriculum-text p {
         width: 100%;
         font-size: 14px;
     }
 
     .curriculum-text {
-        margin-top: 20%;
+        margin-left: 0;
+        padding: 50px 50px 0 50px;
     } 
 
     .networks-wrapper {
-        top: auto;
-        bottom: 0px;
-        left: 3%;
+        background-color: #885c0bcb;
+        display: flex;
+        position: static;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .networks-wrapper a {
-        display: inline;
+        display: flex;
         padding: 20px;
+        align-items: center;
     }
 
     .curriculum-text .button-cv {
@@ -414,21 +418,7 @@ header .logo {
     }
 
     .dev-img {
-        margin-top: 20%;
         margin-bottom: 10%;
-    }
-
-    .networks-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 9%;
-        left: auto;
-        right: auto;
-        top: auto;
-        width: 100%;
-        padding: 0 7%;
     }
 
     .scroll-down {
@@ -441,23 +431,11 @@ header .logo {
     .curriculum-text h5 {
         font-size: 13px;
     }
-
-    .networks-wrapper  {
-        bottom: 2%;
-    }
-
-    .dev-img  {
-        margin-top: 30%;
-    }
 }
 
 @media (max-width: 342px) {
     .dev-img img {
         width: 200px;
-    }
-
-    .networks-wrapper {
-        bottom: 4%;
     }
 
     .curriculum-text p {
